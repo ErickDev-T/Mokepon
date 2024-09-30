@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins&family=Press+Start+2P&display=swap" rel="stylesheet">');
+
+body{
+    font-family: 'Press Start 2P', cursive;
+    background-image: url(./assets/uso-del-fondo-del-juego-del-bosque-o-73562942.jpg);
+    background-color: rgba(30, 38, 17, 0.633);
+    
+}
+
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 50px;
+}
+
+.subtitulo{
+    color: rgb(58, 99, 86);
+    font-size: 30px;
+}
+
+.tarjetas, .tarjetas-ataques{
+    display: flex;
+    gap: 30px
+}
+
+.tarjeta-de-mokepon{
+    width: 235px;
+    height: 100px;
+    background: rgb(112, 160, 124);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white
+}
+
+.tarjeta-de-mokepon img {
+    width: 80px;
+}
+
+/*#contededorAtaques {
+    height: 100px;
+
+}*/
+
+
+#boton-mascota {
+    width: 238px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 5px solid aquamarine;
+    color: rgb(59, 99, 86);
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 40px;
+    font-size: 20px;
+
+} 
+
+input{
+    display: none
+}
+
+#seleccionar-ataque{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#mensajes{
+    color: rgb(255, 255, 255);
+    width: 370px;
+    height: 70px;
+    background: rgb(38, 139, 89);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-direction: column-reverse;
+
+}
+
+.boton-de-ataque {
+    background-color: #fefefe7b;
+    padding: 9px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 70px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.boton-de-ataque:hover{
+    background-color: #11828f9c;
+    border: solid 2px #11828f9c;
+}
+#boton-reiniciar{
+    border:none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    font-family: 'Press Start 2P', cursive;
+    padding: 6px;
+    border-radius: 30px;
+}
+
+.ataques-jugador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 13px;
+    margin-right: 50px;
+}
+
+.ataques-enemigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 13px;
+    margin-right: 50px;
+}
+
+.ataques{
+    display: grid;
+    grid-template-columns: 281px 206px;
+}
+
+input:checked + label {
+    border: solid 3px rgb(127, 255, 212);
+}
+
+input:hover + label{
+    background-color:rgba(112, 160, 124, 0.361);
+}
+
+#boton-mascota:hover{
+    border: solid 7px rgba(127, 255, 212, 0.685);
+
+}
+
+
+.boton-de-ataque-tierra:hover{
+    background-color: rgba(69, 51, 25, 0.500);
+}
+
+@media (max-width: 590px){
+    .tarjetas, .tarjetas-ataques{
+        flex-direction: column;
+    }
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#ver-mapa button {
+    width:  115px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 5px solid aquamarine;
+    color: rgb(59, 99, 86);
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 40px;
+    font-size: 10px;
+    margin: 10px 0;
+}
+
+@media (max-width: 395px){
+    #ver-mapa div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+/* class con punto
